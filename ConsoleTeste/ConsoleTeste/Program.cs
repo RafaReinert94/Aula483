@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleTeste
 {
@@ -10,8 +7,19 @@ namespace ConsoleTeste
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Olá mundo");
-            Console.WriteLine("Mandando para o git");
+            List<string> minhaLista = new List<string>
+            {
+                "Felipe",
+                "Rafael",
+                "Bruno",
+                "Bruna",
+                "Dilceu",
+                "Eduardo"
+            };
+
+
+            minhaLista.ForEach(x => Console.WriteLine(x));
+
             Console.ReadKey(true);
         }
     }
