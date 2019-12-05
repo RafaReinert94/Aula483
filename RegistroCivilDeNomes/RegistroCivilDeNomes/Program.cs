@@ -29,6 +29,9 @@ namespace RegistroCivilDeNomes
                     case "2":
                         MostrarLista();
                         break;
+                    case "3":
+                        EditarUmNome();
+                        break;
                     default:
                         Console.WriteLine("Menu Inválido");
                         Console.ReadKey(true);
@@ -41,6 +44,30 @@ namespace RegistroCivilDeNomes
             Console.ReadKey(true);
         }
 
+        static void EditarUmNome()
+        {
+            Console.WriteLine("Edição de Nomes do Sistema de Registro");
+
+            var numerador = 0;
+            ListaDeNomes.ForEach(x => Console.WriteLine("Nome:{0,-10} Numero:{1,-10}",x,numerador++));
+
+            Console.WriteLine("Informe o número para edição");
+
+            //converter string to int
+            var index = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe um novo nome para o registro");
+
+            var novoNome = Console.ReadLine();
+
+            ListaDeNomes[index] = novoNome;
+
+            Console.WriteLine("Registro alterado com sucesso!");
+
+            Console.ReadKey(true);
+        }
+        
+        
         private static void MensagemInicial()
         {
             Console.WriteLine("*************************");
@@ -66,7 +93,7 @@ namespace RegistroCivilDeNomes
         {
             Console.WriteLine("Listagem de Nome Selecionado");
 
-            ListaDeNomes.ForEach(x => Console.WriteLine($"Nome:^{x}"));
+            ListaDeNomes.ForEach(x => Console.WriteLine($"Nome:{x}"));
 
             Console.WriteLine("Listagem de nomes finalizada.");
             Console.ReadKey(true);
