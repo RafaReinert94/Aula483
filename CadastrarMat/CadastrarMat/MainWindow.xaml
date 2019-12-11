@@ -1,0 +1,25 @@
+﻿<Window x:Class="CadastrarMat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastrarMat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="996.875">
+    <Grid>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="104" Height="37" Click="BtnCadastrar_Click"/>
+        <TextBox x:Name="tbxNome" HorizontalAlignment="Left" Height="23" Margin="167,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="119,10,0,0" VerticalAlignment="Top" Width="48" Height="23"/>
+        <TextBox x:Name="tbxNota1" HorizontalAlignment="Left" Height="23" Margin="340,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNota1" Content="Nota1" HorizontalAlignment="Left" Margin="292,10,0,0" VerticalAlignment="Top" Width="48" Height="23"/>
+        <TextBox x:Name="tbxNota2" HorizontalAlignment="Left" Height="23" Margin="513,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNota2" Content="Nota2" HorizontalAlignment="Left" Margin="465,10,0,0" VerticalAlignment="Top" Width="48" Height="23"/>
+        <TextBox x:Name="tbxNota3" HorizontalAlignment="Left" Height="23" Margin="686,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNota3" Content="Nota3" HorizontalAlignment="Left" Margin="638,10,0,0" VerticalAlignment="Top" Width="48" Height="23"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="253" Margin="10,108,0,0" VerticalAlignment="Top" Width="969"/>
+        <Button x:Name="btnPesquisar" Content="Pesquisar" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top" Width="104" Height="37" Click="BtnPesquisar_Click"/>
+        <TextBox x:Name="tbxNome2" HorizontalAlignment="Left" Height="23" Margin="167,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNome2" Content="Nome:" HorizontalAlignment="Left" Margin="119,52,0,0" VerticalAlignment="Top" Width="48" Height="23"/>
+
+    </Grid>
+</Window>
