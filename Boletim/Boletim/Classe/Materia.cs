@@ -31,7 +31,7 @@ namespace Boletim.Classe
             {
                 if (media >= 5)
                 {
-                    return "Recuperação";
+                    return "Exame";
                 }
                 else
                 {

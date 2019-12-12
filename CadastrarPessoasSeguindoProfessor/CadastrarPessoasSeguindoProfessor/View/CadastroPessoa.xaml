@@ -1,0 +1,21 @@
+﻿<Window x:Class="CadastrarPessoasSeguindoProfessor.View.CadastroPessoa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadastrarPessoasSeguindoProfessor.View"
+        mc:Ignorable="d"
+        Title="CadastroPessoa" Height="236" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139*"/>
+            <ColumnDefinition Width="303*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblNome" Content="Nome:" Margin="83,17,11,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="tbxNome" Height="23" Margin="11,21,91,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="lblIdade" Content="Idade:" Margin="83,76,14,0" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="tbxIdade" Height="23" Margin="11,80,91,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+        <Button x:Name="btnSalvar" Content="Salvar" Grid.Column="1" Margin="11,125,217,0" VerticalAlignment="Top" Click="BtnSalvar_Click"/>
+
+    </Grid>
+</Window>

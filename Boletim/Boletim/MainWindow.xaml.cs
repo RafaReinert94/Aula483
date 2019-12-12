@@ -68,8 +68,8 @@ namespace Boletim
 
         private void BtnSituacaoGeral_Click(object sender, RoutedEventArgs e)
         {
+        
 
-            
             lblSituacaoGeral.Content = "";
         }   
     }
