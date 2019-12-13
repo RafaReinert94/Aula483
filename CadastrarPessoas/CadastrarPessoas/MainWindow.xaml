@@ -12,7 +12,19 @@
         <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tbxIdade" HorizontalAlignment="Left" Height="23" Margin="367,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblIdade" Content="Idade:" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="314" Margin="10,95,0,0" VerticalAlignment="Top" Width="772"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="314" Margin="10,95,0,0" VerticalAlignment="Top" Width="772">
+
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="Button_Click_1">Excluir</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+        </DataGrid>
 
     </Grid>
 </Window>

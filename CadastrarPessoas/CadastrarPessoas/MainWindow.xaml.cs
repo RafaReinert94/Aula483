@@ -41,5 +41,27 @@ namespace CadastrarPessoas
             dataGrid.ItemsSource = null;
             dataGrid.ItemsSource = Contex.Pessoas.ToList<Pessoa>();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+
+            var pessoa = (Pessoa)((System.Windows.FrameworkElement)sender).DataContext;
+            var pessoaremovor = Contex.Pessoas.FirstOrDefault(x => x.Id == pessoa.Id);
+
+            Contex.Pessoas.Remove(pessoaremovor);
+
+            Contex.SaveChanges();
+
+            dataGrid.ItemsSource = null;
+            dataGrid.ItemsSource = Contex.Pessoas.ToList<Pessoa>();
+            }
+            catch
+            {
+                MessageBox.Show("Item nao pode ser excluido");
+            }
+        }
     }
 }
