@@ -35,5 +35,10 @@ namespace SistemaControleEstoque.Controller
             return string.Concat(hash.Select(b => b.ToString("x2")));
         }
 
+        public List<Usuario> GetUsuarios()
+        {
+            return ctx.Usuarios.ToList();
+        }
+
     }
 }

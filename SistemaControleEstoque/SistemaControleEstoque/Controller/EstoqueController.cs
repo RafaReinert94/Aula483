@@ -27,22 +27,22 @@ namespace SistemaControleEstoque.Controller
 
         }
 
-        public IQueryable RetornaListaEstoque()
-        {
-            var estoque = ctx.Estoques.Where(x => x.Ativo);
-            var usuarios = ctx.Usuarios;
+        //public  RetornaListaEstoque()
+        //{
+        //    var estoque = ctx.Estoques.Where(x => x.Ativo);
+        //    var usuarios = ctx.Usuarios;
 
 
-            var retorno = from est in estoque
-                          join usu in usuarios on est.UsuarioCriacao equals usu.Id
-                          select new {
-                              Produto = est.Produto,
-                              Quantidade = est.Quantidade,
-                              Valor = est.Valor,
-                              Usuario = usu.Login
+        //    var retorno = (from est in estoque
+        //              join usu in usuarios on est.UsuarioCriacao equals usu.Id
+        //              select new {
+        //                  Produto = est.Produto,
+        //                  Quantidade = est.Quantidade,
+        //                  Valor = est.Valor.ToString("C"),
+        //                  Usuario = usu.Login
+        //              }).ToList();
 
-                          };
-            return retorno; 
-        }
+        //    return retorno;
+        //}
     }
 }
